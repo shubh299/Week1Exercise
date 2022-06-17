@@ -182,9 +182,9 @@ function start_game(){
 
     $("#time-left").text(timer_shown);
     cur_score = 0;
+    $("#current-score").text(cur_score);
 
     create_playfield(playfield_rows,playfield_columns);
-
 
     document.getElementById("playfield").scrollIntoView(true);
     
@@ -193,8 +193,6 @@ function start_game(){
     
     mole_pop_interval = setInterval(pop_mole,mole_out_frequency);
 }
-
-// start_game();
 
 //handles user name
 $("#player-name").val(cur_player_name)
