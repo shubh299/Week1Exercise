@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Magic Lights</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="yellow-orange-background-368120-pixahive.jpg">
+    <div class="grid-div">
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+        <div class="circles"></div>
+    </div>
+    <script>
+        function generateRandomColor(){
+            let hexValue = (Math.random()*16777215).toString(16);
+            return '#'+hexValue.slice(0,6);
+        }
+
+        window.addEventListener("click",function(){
+            let all_circles = document.getElementsByClassName("circles");
+            let randomColor = generateRandomColor();
+            for(let index = 0; index < all_circles.length; index++){
+                all_circles[index].style.backgroundColor = randomColor;
+            }
+        })
+    </script>
+</body>
+</html>

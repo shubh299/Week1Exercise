@@ -1,0 +1,24 @@
+html,body{
+	height: 100%;
+	width: 100%;
+	margin: 0%;
+    background-size: cover;
+    background-position: center; 
+}
+.grid-div{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 0px;
+	width: 100%;
+	height: 100%;
+}
+.circles{
+    width: 100%;
+    height: 100%;	
+    border: 1px;
+    border-radius: 50%;
+    background-color: aquamarine;
+}
+.circles:hover{
+    opacity: 0;
+}
